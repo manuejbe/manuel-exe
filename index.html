@@ -90,17 +90,6 @@ legend{position:absolute;top:-9px;left:8px;background:var(--gray);padding:0 4px}
 .bar i{display:block;height:100%;width:0;background:repeating-linear-gradient(90deg,var(--navy) 0 11px,transparent 11px 13px)}
 .prog-item .note{font-size:12px;color:#404040;margin-top:4px;min-height:15px}
 
-/* EULA */
-#eula-box{height:min(46vh,330px);overflow-y:auto;padding:10px 12px;line-height:1.5;font-size:13px}
-#eula-box h3{margin:0 0 8px;text-align:center;font-size:14px}
-#eula-box h4{margin:14px 0 4px;font-size:13px}
-#eula-box p{margin:0 0 6px}
-#eula-box ul{margin:4px 0 6px;padding-left:18px}
-#eula-box li{margin-bottom:4px}
-#eula-box .fine{font-size:11px;color:#606060}
-#eula-box .resp{color:#606060;font-style:italic}
-.readmeter{display:flex;align-items:center;gap:8px;margin-top:8px;font-size:12px}
-.readmeter .bar{flex:1;height:14px;padding:2px}
 
 /* firma */
 .firma{font-family:"Brush Script MT","Segoe Script","Snell Roundhand","Lucida Handwriting",cursive;font-size:28px;color:var(--navy);min-height:44px;padding:4px 10px;border-bottom:1px solid #000;margin-top:6px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
@@ -130,6 +119,8 @@ legend{position:absolute;top:-9px;left:8px;background:var(--gray);padding:0 4px}
 .pass-foot{text-align:center;font-size:11px;color:#666;padding:0 12px 12px}
 .links{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:12px}
 .links a{text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.links .btn{min-width:0;padding:7px 10px;white-space:nowrap}
+.links{gap:6px!important;flex-wrap:nowrap!important}
 .hidden{display:none!important}
 
 /* sending */
@@ -225,78 +216,6 @@ legend{position:absolute;top:-9px;left:8px;background:var(--gray);padding:0 4px}
     </div>
   </section>
 
-  <!-- 3. EULA -->
-  <section class="win" id="w-eula" aria-labelledby="t-eula">
-    <div class="title"><span class="t" id="t-eula">Contrato de Embarque — Términos y condiciones</span><button class="btn x" data-shake aria-label="Cerrar">✕</button></div>
-    <div class="body">
-      <p style="margin:0 0 8px">Leé el siguiente contrato. Para continuar tenés que llegar hasta el final. <b>Sí, hasta el final.</b></p>
-      <div id="eula-box" class="sunken" tabindex="0">
-        <h3>CONTRATO DE EMBARQUE Y CIERRE DE SESIÓN</h3>
-        <p class="fine">Entre MANUEL EJBEROWICZ (en adelante, "el Organizador") y la persona que lee esto (en adelante, "el Firmante"), se celebra el presente contrato, sujeto a las siguientes cláusulas:</p>
-
-        <h4>CLÁUSULA 1 — OBJETO</h4>
-        <p>Celebrar en un único acto, por razones de eficiencia que solo un Ingeniero Industrial entendería:</p>
-        <ul>
-          <li>(a) la <b>recibida</b> del Organizador como Ingeniero Industrial (ITBA);</li>
-          <li>(b) su <b>cumpleaños número 23</b>, con diez días de anticipación por razones logísticas;</li>
-          <li>(c) su <b>despedida</b> antes de mudarse a ISR.</li>
-        </ul>
-        <p>Tres eventos, un solo traslado. Optimización de procesos.</p>
-
-        <h4>CLÁUSULA 2 — FECHA Y LUGAR</h4>
-        <p><b>Domingo 20 de diciembre, 18:00 hs</b>, en la casa del Organizador. La dirección exacta se revelará únicamente una vez firmado el presente contrato.</p>
-
-        <h4>CLÁUSULA 3 — PERMANENCIA</h4>
-        <p>El Firmante renuncia expresamente a retirarse con el argumento "es que mañana es lunes". Mañana es lunes para todos.</p>
-
-        <h4>CLÁUSULA 4 — FRASES PROHIBIDAS</h4>
-        <p>Durante el evento queda <b>terminantemente prohibido</b> pronunciar las siguientes frases:</p>
-        <ul>
-          <li>"¿Y no te da miedo?"</li>
-          <li>"¿Y tus viejos cómo lo llevan?"</li>
-          <li>"¿Pero vos hablás hebreo?" <span class="resp">— Respuesta oficial: "un poco". Fin del tema.</span></li>
-          <li>"¿Y qué hace un ingeniero industrial?" <span class="resp">— Esa información es confidencial (y desconocida).</span></li>
-          <li>"Ahora que sos ingeniero, ¿me mirás la impresora?"</li>
-          <li>"¿Y cuándo volvés?" <span class="resp">— De visita, con chocolates.</span></li>
-          <li>"Allá hace un calor terrible, ¿no?"</li>
-          <li>"Yo no podría."</li>
-        </ul>
-        <p><b>Sanción:</b> el infractor deberá servir la próxima ronda y escuchar, sin interrumpir, una explicación completa de qué es Garin Tzabar.</p>
-
-        <h4>CLÁUSULA 5 — VESTIMENTA</h4>
-        <p>Casual. Se desaconseja el verde militar: el Organizador va a tener suficiente de eso en los próximos años.</p>
-
-        <h4>CLÁUSULA 6 — REGALOS</h4>
-        <p>No se requieren. Se aceptan, sin embargo: abrazos, fotos impresas para la valija y dulce de leche en envase apto para despachar.</p>
-
-        <h4>CLÁUSULA 7 — DISCURSOS</h4>
-        <p>Los discursos emotivos tendrán una duración máxima de 90 segundos. El llanto está permitido, pero quedará registrado en video y podrá ser usado en su contra.</p>
-
-        <h4>CLÁUSULA 8 — ALIMENTACIÓN</h4>
-        <p>El Firmante deberá declarar sus restricciones alimentarias en el formulario siguiente. Aclaración: "no me gusta la cebolla" no es una restricción, es una opinión. Igual anotala, somos gente comprensiva.</p>
-
-        <h4>CLÁUSULA 9 — JURISDICCIÓN</h4>
-        <p>Toda controversia será resuelta por la madre del Organizador, cuyo fallo es definitivo e inapelable.</p>
-
-        <h4>CLÁUSULA 10 — VIGENCIA</h4>
-        <p>Este contrato no vence. La amistad tampoco. (Sí, fue cursi. Seguí bajando.)</p>
-
-        <p style="margin-top:18px;text-align:center"><b>— FIN DEL CONTRATO —</b></p>
-        <p class="fine" style="text-align:center">Felicitaciones: sos una de las tres personas en el mundo que leyeron unos términos y condiciones completos.</p>
-      </div>
-      <div class="readmeter"><span>Leído:</span><div class="bar"><i id="read-bar"></i></div><span id="read-pct">0%</span></div>
-
-      <div style="margin-top:12px">
-        <label class="chk"><input type="radio" name="eula" id="eula-yes" disabled> <span id="eula-yes-l" style="color:var(--dark)">Acepto los términos y condiciones</span></label>
-        <label class="chk"><input type="radio" name="eula" id="eula-no"> No acepto</label>
-      </div>
-      <div class="row" style="justify-content:flex-end">
-        <button class="btn" id="btn-eula-back">&lt; Atrás</button>
-        <button class="btn primary" id="btn-eula-next" disabled>Siguiente &gt;</button>
-      </div>
-    </div>
-  </section>
-
   <!-- 4. FORM -->
   <section class="win" id="w-form" aria-labelledby="t-form">
     <div class="title"><span class="t" id="t-form">Registrar usuario — CIERRE_DE_SESION.bat</span><button class="btn x" data-shake aria-label="Cerrar">✕</button></div>
@@ -334,7 +253,7 @@ legend{position:absolute;top:-9px;left:8px;background:var(--gray);padding:0 4px}
 
         <label class="lbl">Firma digital del Firmante</label>
         <div class="firma sunken" id="firma" aria-live="polite">&nbsp;</div>
-        <div class="hint">Al firmar declarás haber leído el contrato (o haber scrolleado muy rápido).</div>
+        <div class="hint">Al firmar confirmás que entendiste que esto no es opcional (bueno, un poco sí).</div>
 
         <div class="row">
           <button type="submit" class="btn primary" id="btn-submit">✍️ Firmar y embarcar</button>
@@ -404,6 +323,7 @@ legend{position:absolute;top:-9px;left:8px;background:var(--gray);padding:0 4px}
       <div class="links">
         <a class="btn hidden" id="btn-maps" target="_blank" rel="noopener">📍 Abrir en Maps</a>
         <a class="btn" id="btn-cal" target="_blank" rel="noopener">📅 Agendar</a>
+        <button class="btn" id="btn-pass-close">✕ Cerrar</button>
       </div>
     </div>
   </section>
@@ -537,8 +457,8 @@ tick(); setInterval(tick, 15000);
 const MSGS = {
   mipc:["Mi PC","Procesador: mate amargo. Memoria RAM: insuficiente para tanto vocabulario en hebreo."],
   docs:["Mis documentos","Pasaporte.pdf · Titulo_ITBA_FINAL_v7_ahora_si.pdf · Lista_de_cosas_para_la_valija (47).docx"],
-  itba:["Ingeniería.lnk","Instalación completada. Tiempo total: varios años y una cantidad indeterminada de café."],
-  trash:["Papelera de reciclaje","Contiene: apuntes de Análisis II, 3 parciales que no vamos a mencionar y la frase \"¿y no te da miedo?\"."],
+  itba:["Ingeniería.lnk","Instalación completada. Tiempo total: varios años y una cantidad indeterminada de pelo perdido."],
+  trash:["Papelera de reciclaje","Contiene: la frase \"¿y no te da miedo?\"."],
   isr:["ISR.exe","Este programa se ejecutará automáticamente en enero de 2027. No intente detenerlo."],
   prog:["Programas","Mate.exe · Asado.exe · Despedida.exe (en ejecución)"],
   conf:["Configuración","Idioma: español rioplatense. Próximamente: עברית."],
@@ -557,7 +477,7 @@ $("#start-btn").addEventListener("click",e=>{
   $("#start-btn").setAttribute("aria-expanded", String(!open));
 });
 document.addEventListener("click",e=>{ if(!e.target.closest("#startmenu")) closeStart(); });
-$("#task-btn").addEventListener("click",()=>{ if(current) shake($("#"+current)); });
+$("#task-btn").addEventListener("click",()=>{ if(current && $("#"+current).classList.contains("open")) shake($("#"+current)); });
 
 /* =================================================================
    0. BOOT
@@ -621,8 +541,14 @@ function flee(e){
   ign.classList.add("run");
   ign.textContent=IGNORE_LABELS[flees];
   const bw=ign.offsetWidth, bh=ign.offsetHeight;
-  const x = 6 + Math.random()*(wr.width - bw - 12);
-  const y = 30 + Math.random()*(wr.height - bh - 36);
+  // posición al azar dentro de la ventana, sin tapar "Aceptar"
+  const ar=$("#btn-accept").getBoundingClientRect();
+  let x,y,tries=0;
+  do{
+    x = 6 + Math.random()*(wr.width - bw - 12);
+    y = 30 + Math.random()*(wr.height - bh - 36);
+    tries++;
+  }while(tries<40 && !(wr.left+x+bw < ar.left-8 || wr.left+x > ar.right+8 || wr.top+y+bh < ar.top-8 || wr.top+y > ar.bottom+8));
   ign.style.left = x+"px"; ign.style.top = y+"px";
   beep([1200],.04,"square",.03);
 }
@@ -668,39 +594,7 @@ async function runInstall(){
   $("#btn-install-next").focus();
 }
 $("#btn-install-next").onclick=()=>{
-  sndOk(); swap("w-install","w-eula");
-  // si el contrato entra entero en pantalla (no hay scroll), habilitamos igual
-  setTimeout(()=>{ if(box.scrollHeight<=box.clientHeight+4) box.dispatchEvent(new Event("scroll")); },400);
-};
-
-/* =================================================================
-   3. CONTRATO (EULA)
-   ================================================================= */
-const box=$("#eula-box"); let readAll=false;
-box.addEventListener("scroll",()=>{
-  const max = box.scrollHeight - box.clientHeight;
-  const pct = max<=4 ? 100 : Math.min(100, Math.round(box.scrollTop / max * 100));
-  $("#read-bar").style.width=pct+"%"; $("#read-pct").textContent=pct+"%";
-  if(pct>=97 && !readAll){
-    readAll=true;
-    $("#eula-yes").disabled=false;
-    $("#eula-yes-l").style.color="#000";
-    beep([988,1319],.07);
-  }
-});
-$("#eula-yes").addEventListener("change",()=>{ $("#btn-eula-next").disabled=false; });
-$("#eula-no").addEventListener("change",e=>{
-  $("#btn-eula-next").disabled=true;
-  setTimeout(()=>{ e.target.checked=false; },250);
-  shake($("#w-eula"));
-  const msgs=["Respuesta incorrecta. Probá con la otra opción.","Seguís eligiendo mal.","Este contrato no admite rechazo. Ver Cláusula 9."];
-  const n=(window._noCount=(window._noCount||0)+1);
-  toast("Error de validación", msgs[Math.min(n,msgs.length)-1]);
-  if(!readAll) setTimeout(()=>toast("Pista","Primero bajá hasta el final del contrato."),2600);
-});
-$("#btn-eula-back").onclick=()=>{ shake($("#w-eula")); toast("No hay vuelta atrás","Literalmente. El pasaje ya está sacado."); };
-$("#btn-eula-next").onclick=()=>{
-  sndOk(); swap("w-eula","w-form");
+  sndOk(); swap("w-install","w-form");
   // nombre prellenado desde el link: ?n=Juan
   const pre = new URLSearchParams(location.search).get("n");
   if(pre && !$("#f-nombre").value){ $("#f-nombre").value=pre; updateFirma(); }
@@ -859,6 +753,16 @@ function initScratch(){
     toast("¡Puerta asignada!","Nos vemos el domingo 20 a las 18:00. Traé hambre.");
   }
 }
+
+$("#btn-pass-close").onclick=()=>{
+  closeWin("w-pass"); current="w-pass";
+  $("#task-btn").textContent="✈ Tarjeta de embarque";
+  beep([523,392],.08);
+  toast("Nos vemos el 20/12","Si necesitás ver la tarjeta de nuevo, tocá el botón de la barra de tareas.");
+};
+$("#task-btn").addEventListener("click",()=>{
+  if(current==="w-pass" && !$("#w-pass").classList.contains("open")) openWin("w-pass");
+},true);
 
 /* ---------- confetti ---------- */
 function confetti(n=90){
