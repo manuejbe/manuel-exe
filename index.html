@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>MANUEL.EXE — Cierre de sesión</title>
-<meta name="description" content="Invitación crítica: MANUEL.EXE se muda a ISR. Domingo 20/12, 18:00.">
+<meta name="description" content="Invitación crítica: MANUEL.EXE se muda a ISR. Domingo 20/12, 19:00.">
 <meta property="og:title" content="⚠ MANUEL.EXE — Invitación crítica">
-<meta property="og:description" content="MANUEL.EXE se prepara para migrar al servidor ISR. Se requiere tu presencia. Domingo 20/12, 18:00.">
+<meta property="og:description" content="MANUEL.EXE se prepara para migrar al servidor ISR. Se requiere tu presencia. Domingo 20/12, 19:00.">
 <style>
 /* ============================================================
    CONFIG VISUAL — paleta Windows 95
@@ -177,7 +177,7 @@ legend{position:absolute;top:-9px;left:8px;background:var(--gray);padding:0 4px}
         <div>
           <p style="margin:0 0 8px"><b>MANUEL.EXE ha completado su ciclo en Argentina y será migrado al servidor ISR.</b></p>
           <p style="margin:0 0 8px">Antes de apagar el sistema se ejecutará el proceso <code>CIERRE_DE_SESION.bat</code>, que requiere la presencia física de todos los usuarios conectados.</p>
-          <p style="margin:0;font-size:12px;color:#404040">Código de invitación: 0x20_12_1800</p>
+          <p style="margin:0;font-size:12px;color:#404040">Código de invitación: 0x20_12_1900</p>
         </div>
       </div>
       <div class="row" id="err-row">
@@ -299,7 +299,7 @@ legend{position:absolute;top:-9px;left:8px;background:var(--gray);padding:0 4px}
         <div class="pass-grid">
           <div class="full"><small>PASAJERO/A</small><b id="pass-name">—</b></div>
           <div><small>FECHA</small><b>DOM 20 DIC</b></div>
-          <div><small>EMBARQUE</small><b>18:00</b></div>
+          <div><small>EMBARQUE</small><b>19:00</b></div>
           <div><small>VUELO</small><b>MNL 2312</b></div>
           <div><small>ASIENTO</small><b>Libre</b></div>
           <div><small>CLASE</small><b>VIP</b></div>
@@ -388,8 +388,8 @@ const CONFIG = {
 
   // Para el botón "Agendar" (hora local Buenos Aires)
   EVENTO_TITULO: "MANUEL.EXE — Cierre de sesión 🎓🎂✈️",
-  INICIO: "20261220T180000",
-  FIN:    "20261221T000000",
+  INICIO: "20261220T190000",
+  FIN:    "20261221T010000",
 };
 
 /* ================================================================= */
@@ -753,7 +753,7 @@ function initScratch(){
     cv.style.opacity=0; setTimeout(()=>cv.style.display="none",600);
     $("#btn-maps").classList.remove("hidden");
     sndTada(); confetti(60);
-    toast("¡Puerta asignada!","Nos vemos el domingo 20 a las 18:00. Traé hambre.");
+    toast("¡Puerta asignada!","Nos vemos el domingo 20 a las 19:00. Traé hambre.");
   }
 }
 
